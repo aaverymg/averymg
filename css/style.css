@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(#7D84B2, #D9DBF1);
+    background-attachment: fixed;
+    margin: auto;
+    width: 50%;
+    Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: bold;
+}
+
+img {
+    float: right;
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+}
+
+a, a:visited {
+    color: #566DB3;
+}
+
+.main {
+    background-color: #D9DBF1;
+    padding: 5px;
+}
+
+
