@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#10024 &#127776 &#127760</title>
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="hydrastyle.css"
+</head>
+
+<body>
+    <div class="hydra">
+    <canvas id="hydraCanvas" width="500" height="500"></canvas>
+
+    <script>
+        var hydra = new Hydra({
+            canvas: document.getElementById("hydraCanvas"),
+            detectAudio: false
+        });
+
+        speed = .0222
+        osc(48, -.1, 0).thresh([.3, .7].fast(.75), 0).color(0, 0, 1)
+
+            .add(
+                osc(28, .1, 0).thresh([.3, .7].fast(.75), 0).rotate(3.14 / 4)
+                    .color(1, 0, 0)
+                    .modulateScale(osc(64, -.01, 0).thresh([.3, .7].fast(.75), 0))
+            )
+            .diff(
+                osc(28, .1, 0).thresh([.3, .7].fast(.5), 0).rotate(3.14 / 2)
+                    .color(1, 0, 1)
+                    .modulateScale(osc(64, -.015, 0).thresh([.3, .7].fast(.5), 0))
+            )
+            .modulateRotate(osc(54, -.005, 0).thresh([.3, .7].fast(.25), 0))
+            .modulateScale(osc(44, -.020, 0).thresh([.3, .7].fast(.25), 0))
+            .colorama(() => Math.sin(time / 27) * .01222 + 9.89)
+            .scale(2.122)
+
+            .out()
+
+</script>
+    
+    <pre class="ascii-element">
+        </pre>
+    
+    <script>
+        var element = document.querySelector('pre');
+        AsciiMorph(element, { x: 51, y: 28 });
+
+        var asciis = [[
+            "              .",
+            "   					",
+            "                       |",					
+            "              .               /",				
+            "               \\       I",     				
+            "                           /",
+            "                 \\  ,g88R_",
+            "                   d888(`  ).                   _",
+            "          -  --==  888(     ).=--           .+(`  )`.",
+            "         )         Y8P(       '`.          :(   .    )",
+            "                 .+(`(      .   )     .--  `.  (    ) )",
+            "                ((    (..__.:'-'   .=(   )   ` _`  ) )",
+            "         `.     `(       ) )       (   .  )     (   )  ._",
+            "           )      ` __.:'   )     (   (   ))     `-'.:(`  )",
+            "         )  )  ( )       --'       `- __.'         :(      ))",
+            "         .-'  (_.'          .')                    `(    )  ))",
+            "                           (_  )                     ` __.:'",
+            "                                                     ",
+            "         --..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.",
+        ],
+
+        [
+            "_________________",
+            "|# :           : #|",
+            "|  :           :  |",
+            "|  :           :  |",
+            "|  :           :  |",
+            "|  :___________:  |",
+            "|     _________   |",
+            "|    | __      |  |",
+            "|    ||  |     |  |",
+            "\\____||__|_____|__|",
+        ],
+
+        [
+            "      .--.",
+            "    .'_\\/_'.",
+            "    '. /\\ .'",
+            "      \"||\"",
+            "       || /\\",
+            "    /\\ ||//\\)",
+            "   (/\\\\||/",
+            "______\\||/_______",
+        ],
+
+        [
+            "         o",
+            "          \\",
+            "           \\      /\\",
+            "            \\    /  o",
+            "             \\__/",
+            "     _______ /  \\_________",
+            "    | __________________  |",
+            "    ||\"'`':`.,~\"`;\"`;#'~|_|",
+            "    ||\";\";.,`~;`'+.:',!`|O|",
+            "    ||.;',`'`.,`':.`~,;'|O|",
+            "    ||':'\"\"`~`\"'`'`::'`'|o|",
+            "    ||.:',~;~'`;'`.,:'`;|_|",
+            "    ||-'`:'`.`;.:\"\"\";/;`| |",
+            "    ||'`'`~';?;`:`.,`.:'| |",
+            "    |'------------------' |",
+            "    '---------------------'",
+        ],
+
+        [
+            "   -=-",
+            "(\\  _  /)",
+            "( \\( )/ )",
+            "(       )",
+            " `>   <'",
+            " /     \\",
+            " `-._.-'",
+        ],
+
+        [
+            " |`-._/\\_.-`|",
+            " |    ||    |",
+            " |___o()o___|",
+            " |__((<>))__|",
+            " \\   o\\/o   /",
+            "  \\   ||   /",
+            "   \\  ||  /",
+            "    '.||.'",
+            "      ``",
+        ]];
+
+        AsciiMorph.render(asciis[0]);
+
+        var currentIndex = 2;
+
+        setTimeout(function () {
+            AsciiMorph.morph(asciis[1]);
+        }, 1000);
+
+        setInterval(function () {
+            AsciiMorph.morph(asciis[currentIndex]);
+            currentIndex++;
+            currentIndex %= asciis.length;
+        }, 3000);
+    </script>
+
+    <p>live coding girlies are my favorite kinds because they embody the innermost desire to befriend the machine the
+    nostalgic warmth of laptop running all night they seem so powerful tangled in wires softness meets force softness
+    meets force what is the softness what is the force it comes together finally at last coexistence and heroines of
+    sound really do feel like joans of arc of our times</p>
+
+
+    </div>
+    
+
+</body>
+
+</html>
