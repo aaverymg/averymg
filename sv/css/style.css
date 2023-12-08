@@ -1,0 +1,56 @@
+body {
+  color: #154469;
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto;
+  width: 50%; 
+}
+
+a, a:visited {
+  color: #0d2940;
+}
+
+button {
+  background-color: white;
+  color: #154469;
+  font-family: 'Courier New', Courier, monospace;
+  border: 5px double;
+	font-size: 15px;
+	padding: 5px;
+}
+
+mark {
+  background-color: #b8d9f2;
+}
+
+.header {
+  background-color: white;
+  text-align: right;
+  border: 5px double;
+  padding: 10px;
+  min-width: 500px;
+}
+
+.main {
+  background-color: white;
+  text-align: left;
+  border: 5px double;
+  padding: 10px;
+  min-width: 500px;
+}
+
+.biblio {
+  background-color: white;
+  text-align: left;
+  border: 5px double;
+  padding: 10px;
+  min-width: 500px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
