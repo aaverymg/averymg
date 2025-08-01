@@ -141,7 +141,7 @@ function footerText() {
         "we're different but the same,",
     ];
 
-    return footers[Math.floor((Math.random() * 138.99))];
+    return footers[Math.floor((Math.random() * footers.length))];
 }
 
 document.getElementById('footerText').innerHTML = footerText();
