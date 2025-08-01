@@ -7,9 +7,35 @@
     <title>★★★★★</title>
     <link rel="stylesheet" href="css\style.css">
     <script src="js\script.js" async></script>
+    <script src="https://unpkg.com/hydra-synth"></script>
 
 </head>
 <body>
+
+<canvas id="hydraCanvas"></canvas>
+<script>
+        var hydra = new Hydra({
+            canvas: document.getElementById("hydraCanvas"),
+            detectAudio: false
+        });
+
+        osc(5)
+        .blend(solid(.4,.03,.9))
+        .sub(o1)
+        .modulate(noise(25))
+        .pixelate(25,25)
+        .brightness(-.25)
+        .out(o0)
+
+        shape(4,.5,.5)
+        .mult(solid(.1,.1,0))
+        .scrollX(0,.1)
+        .out(o1)
+
+        render(o0)
+
+</script>
+
     <br>
     <div class="header">
         <img src="media/star.gif" id="star">

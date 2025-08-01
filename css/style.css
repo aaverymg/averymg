@@ -13,6 +13,14 @@ img {
     height: 100%;
 }
 
+canvas {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .header {
     display: flex;
     justify-content: flex-start;
@@ -30,11 +38,11 @@ img {
 }
 
 a, a:visited {
-    color: #566DB3;
+    color: #6769d0;
 }
 
 .main {
-    background-color: #D9DBF1;
+    background-color: #eaebff;
     padding: 10px;
 }
 
@@ -46,7 +54,7 @@ a, a:visited {
 
 #footer {
     background-color: transparent;
-    color: #566DB3;
+    color: #6769d0;
     font-style: italic;
     font-size: 90%;
     font-weight: 100;
