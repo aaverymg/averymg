@@ -38,20 +38,9 @@ a, a:visited {
     padding: 5px;
 }
 
-#menu {
-    height: 340px;
-}
-
-button {
-    background-color: #39457b;
-    color: #D9DBF1;
-    width: 100px;
-    height: 100px;
-    font-weight: bold;
-    text-align: center;
-}
-
-button:hover {
-    background-color: #D9DBF1;
-    color: #39457b;
+#footer {
+    background-color: transparent;
+    color: #566DB3;
+    font-style: italic;
+    font-size: 90%;
 }
