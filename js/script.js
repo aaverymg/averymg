@@ -139,6 +139,10 @@ function footerText() {
         "over and out,",
         "kind wishes from the HQ,",
         "we're different but the same,",
+        "it was the best of times it was the worst of times, and no one knows about nuance,",
+        "part of the process,",
+        "this isn't even my final form,",
+        "may thy knife chip and shatter,",
     ];
 
     return footers[Math.floor((Math.random() * footers.length))];
