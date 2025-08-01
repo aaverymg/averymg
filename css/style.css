@@ -29,8 +29,9 @@ canvas {
 
 #star {
     order: 1;
-    height: 75px;
-    width: 75px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
 }
 
 #name {
@@ -60,4 +61,12 @@ a, a:visited {
     position: fixed;
     bottom: 0px;
     text-align: center;
+}
+
+img[src$=".gif"], img[src$=".png"] {
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
