@@ -35,7 +35,13 @@ a, a:visited {
 
 .main {
     background-color: #D9DBF1;
-    padding: 5px;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 #footer {
@@ -43,4 +49,8 @@ a, a:visited {
     color: #566DB3;
     font-style: italic;
     font-size: 90%;
+    font-weight: 100;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
 }
