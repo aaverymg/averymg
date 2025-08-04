@@ -143,9 +143,10 @@ function footerText() {
         "part of the process,",
         "this isn't even my final form,",
         "may thy knife chip and shatter,",
+        "don't let the bastards get you down,",
+        "tiocfaidh ár lá,",
     ];
 
     return footers[Math.floor((Math.random() * footers.length))];
 }
-
 document.getElementById('footerText').innerHTML = footerText();
