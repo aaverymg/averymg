@@ -145,6 +145,8 @@ function footerText() {
         "may thy knife chip and shatter,",
         "don't let the bastards get you down,",
         "tiocfaidh ár lá,",
+        "salad is usually items,",
+        "may all kinds of shit happen,",
     ];
 
     return footers[Math.floor((Math.random() * footers.length))];
