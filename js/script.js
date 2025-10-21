@@ -145,7 +145,7 @@ function footerText() {
         "may thy knife chip and shatter,",
         "don't let the bastards get you down,",
         "tiocfaidh ár lá,",
-        "salad is usually items,",
+        "salad is mostly items,",
         "may all kinds of shit happen,",
     ];
 
