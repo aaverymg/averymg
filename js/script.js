@@ -26,7 +26,7 @@ function footerText() {
         "stars aligning,",
         "ease towards pleasure,",
         "to insanity,",
-        "hand in hand,",
+        "hand in unloveable hand,",
         "chronically,",
         "as above; so below,",
         "godspeed,",
@@ -151,6 +151,11 @@ function footerText() {
         "with nuance,",
         "break me into bigger pieces,",
         "no one ever knows what you're talking about,",
+        "per my last desperate howl at the heavens,",
+        "i hope this email kills us both,",
+        "take it,",
+        "from every angle,",
+        "one more time,",
     ];
 
     return footers[Math.floor((Math.random() * footers.length))];
