@@ -7,12 +7,6 @@ body {
     font-style: bold;
 }
 
-img {
-    float: right;
-    width: 45%;
-    height: 100%;
-}
-
 canvas {
     position: absolute;
     left: 0;
@@ -25,6 +19,67 @@ canvas {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    border-radius: 40px;
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+}
+
+#buttonMenu {
+    text-align: center;
+}
+
+#buttonMode {
+    background-color: #6769d0;
+    color: white;
+    font-size: medium;
+}
+
+#easy {
+    background-color: #0a66c2;
+    color: white;
+    font-weight: 700;
+    font-family: 'Source Sans 3';
+}
+
+#medium {
+    background-color: #6E3D6F;
+    color: white;
+    font-weight: 700;
+    font-family: 'Source Sans 3';
+}
+
+#hard {
+    background-color: #D22B2B;
+    color: white;
+    font-weight: 700;
+    font-family: 'Source Sans 3';
+}
+
+#lancer {
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#imagebox {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+#skeleton {
+    position: absolute;
+    right: 500px;
 }
 
 #star {

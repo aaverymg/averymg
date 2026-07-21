@@ -161,3 +161,4 @@ function footerText() {
     return footers[Math.floor((Math.random() * footers.length))];
 }
 document.getElementById('footerText').innerHTML = footerText();
+
