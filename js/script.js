@@ -148,6 +148,9 @@ function footerText() {
         "salad is mostly items,",
         "may all kinds of shit happen,",
         "history will absolve me,",
+        "with nuance,",
+        "break me into bigger pieces,",
+        "no one ever knows what you're talking about,",
     ];
 
     return footers[Math.floor((Math.random() * footers.length))];
