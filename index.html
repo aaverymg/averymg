@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/hydra-synth"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/buttons.js"></script>
+    <script src="js/js.js"></script>
 </head>
 
 <body>
@@ -62,6 +63,350 @@
         <br>
         <p>contact them via <a href="https://www.instagram.com/forager.wav/" target="_blank">instagram</a> or <a href="https://bsky.app/profile/twinkachu.jsrf.bingo" target="_blank">bluesky</a> for dj/viz bookings or production inquiries, or to recommend them wikipedia articles</p>
         </p>
+        </div>
+
+
+    <div id="night">
+        <pre class="ascii-element">
+    </pre>
+
+<script>
+    var element = document.querySelector('pre');
+    AsciiMorph(element, { x: 60, y: 25 });
+
+    var asciis = [[
+    "             ':.                                                                          .  '                      ",
+    "               '::._                                                                                                ",
+    "                 '._) '                         o                                                            *      ",
+    "                              .-.'               *      +      .                       '                            ",
+    "    o                        ( (                                            '                   +                   ",
+    "                              `-'                                                                                   ",
+    "'                                                          |                                                        ",
+    "                                                         --o--                                                      ",
+    "                                                           |                                                        ",
+    "                                        '     '     .                                                               ",
+    "     '                                                                                          '                  .",
+    "                                                                            '                                       ",
+    "                                                                                   '          .                     ",
+    "                                                                                                                    ",
+    "                                                                                                                    ",
+    "                                                        .                          |                                ",
+    "                        o                                            o           --o--                   o          ",
+    "                                    ~~+       .                                    |                      .         ",
+    "                                                                               *     .      .         .             ",
+    "                                                                                                                    ",
+    "                                         o                                               +                          ",
+    "                                                                                       *                            ",
+    "                                  *                                                                                 ",
+    "                                                           o                                                  o     ",
+    "                                                       .                                     '                      ",
+    "                    .                                     .  '                               .                      ",
+    "                     .                                                                                              ",
+    "                                   +                                                             +                  ",
+    "                                 * .                    +                          o    .                           ",
+    "        o                                      '                                                                    ",
+    "                                     .                                                                              ",
+    "                        +                                                            '                          +   ",
+    "                                         '                                                                          ",
+    "        '                    *                                                                  .                   ",
+    "                                                                                             .                      ",
+    "                                                                                                                    ",
+    "                                                                                                                    ",
+    "                                   +~~                    '                   .                                     ",
+    "                     o                                                     +                                        ",
+    "                                                                                                                    ",
+    "                                                                                                                    ",
+    "                                                                                                                    ",
+    "                                                                                                   '    .           ",
+    "                                                                      *                                             ",
+    "      +         '                       '                                                  +                        ",
+    "        .              *                                                                               +            ",
+    "                                    '                                                                               ",
+    "                                                           _|_                                                      ",
+    "                                                            |                                                       ",
+    "                                                                                             .                      ",
+    ],
+
+    [
+    "    .                                                                *                                              ",
+    "                                                                                                                    ",
+    "                                                                                                 .             *    ",
+    "                        '                                        +          .:'         .                           ",
+    " '                                                                      _.::'                                       ",
+    "                                                                       (_.'                                         ",
+    "                            +              *                                                       *                ",
+    "                                                     +                       +                                      ",
+    "                                             '.                                                                     ",
+    "'                                                                                        +                          ",
+    "  '                                                             +                        *                +         ",
+    "                                                                                          o           '             ",
+    "                                                                                  *                            /    ",
+    "                                                                                                              /     ",
+    "         .                                  +                                                                *      ",
+    "                        .       '                                                                  .-.              ",
+    "                                                                               +                    ) )             ",
+    "                                                                                                   '-´              ",
+    "                                            *                                                                       ",
+    ".          ' o                                                                                                      ",
+    "                            o                                                      .                                ",
+    "               _|_      .                                          '           o                                    ",
+    "                |                           +          .                    o                                       ",
+    "                                                                                                   '  +             ",
+    "                                     *                /                                o                   .        ",
+    "                                                     /         o                       .                            ",
+    "                                      o             *                                                               ",
+    "        |                                                                                                           ",
+    "       -+-                                                                                                          ",
+    "        |                        .                                                                                  ",
+    "        o  .        *                                                                                            '  ",
+    "                                                                                o                  '                ",
+    "                                                               .                                                    ",
+    "    '                                     .                                                                         ",
+    "                  .                                                '                                o               ",
+    "       +             '                                   +                                      .                   ",
+    "                          '                         .                                        '                  .   ",
+    "*                                                                   o    +                                          ",
+    "                                 |                                                                                  ",
+    "                               - o -                                                                                ",
+    "                                 |                                            .                                     ",
+    "                                                                                                                    ",
+    "                                                                                         .                          ",
+    "                                                                                                                    ",
+    "                                                '                                                                   ",
+    "                                                                                          +                         ",
+    "                                                        *                                                           ",
+    "                                                                                                                    ",
+    "                                                                       '                                            ",
+    "                                                         o                                                          ",
+    ],
+
+    [
+    "                  .                                  *                                                                  ",
+    "                                  '        +                           o                                          +     ",
+    ".                                                                                                                       ",
+    "                                                 . .                                .                                  .",
+    "              o                                                                                                         ",
+    "                                                                         +     '          .                             ",
+    "                                        |                                        o                                      ",
+    "                                       -o-                                       +                                      ",
+    "  *         +                           |                            '                         ''    '                  ",
+    "                                                   o   +                                                                ",
+    " '                                                                                                '                     ",
+    "                                                                              o                                         ",
+    "                     o                                                                       . '                        ",
+    "       '                             +                                                                                  ",
+    "                         +                            .                                                                 ",
+    "                                      o              *                                                        +         ",
+    "     '                    +                               .     +                             '               .         ",
+    "                                    .       '                  '                  '                                     ",
+    "               '                                                                                              .         ",
+    "                                         +                                                   '            .'  '         ",
+    "        .                                                         .                 +.                                  ",
+    "                                                                                                                        ",
+    "        |                               .                                    '                                          ",
+    "      - o -       +   o     ~~+                                                                   +                     ",
+    "        |          .:'                  '                                                |                |             ",
+    "               _.::'                   .:'                             * _|_           --o--            --o--           ",
+    "              (_.'                 _.::'                              o   |              |                |  o  .       ",
+    "                                  (_.'                                                                 '                ",
+    "                +                     '                                                                             .   ",
+    "                                                                                                                 .      ",
+    "       +                                                                                  '                             ",
+    "        '                  '                                                                                            ",
+    "     .                                                           '               +                                      ",
+    "                                         .                                                                              ",
+    "                                                       +                                                                ",
+    "                                                                                .     '                                 ",
+    "+                         .        '                                                                 .                  ",
+    "                    +                         .                                                                         ",
+    "                                                                               +                                        ",
+    "                                            *                                             .         |                   ",
+    "                                           .                                                      --o--              '  ",
+    "                            .                         '                                             |                   ",
+    "                                                             o                                                          ",
+    "                                                                                       |                             '  ",
+    "           |                        .                                                 -o-              +                ",
+    "         - o -                                                              .-.     '  |                                ",
+    "           |                                                                 ) )               '   o+                   ",
+    "                                 .                        .                 '-´          +                              ",
+    "                                                                     '    +                                             ",
+    "                                                                                                                        ",
+    ],
+
+    [
+"  '                               +                                    '                                                ",
+"*                 *      o                         .                                                 .                  ",
+"                      o                                   '   +~~                                                       ",
+"         /   +               '  +      +       '  .                                   o               +                 ",
+"        /  .                                              '                                                             ",
+"       *                                                                                            .                   ",
+"             .                   '       '                            +                                             +   ",
+"                                       '                o                                                         .     ",
+"                                                                                                                        ",
+"                                     *                                                                                  ",
+"              ~~+       '                                                                                     .   '     ",
+"                      *              *                     o         *              .        .                          ",
+"                                                                           .    *                  .   *                ",
+"                             *         +                       .                      .                           +  +  ",
+"                                                                                                  .          .          ",
+"       '                            .  *                      '                                       +                 ",
+"   +                                                                        '                       o                  .",
+"                                                                                                           o     '      ",
+"                                                                                                 .                      ",
+"            +                                                                                                         ' ",
+"          .                '                 '                                                             '            ",
+"                                        +      '                               .                                  .     ",
+" .                                                                                                                      ",
+"                        '        |                                                                *         '       .   ",
+"                               --o--                       .                                                            ",
+"                                 |                       '                     *                      .                 ",
+"               .                                                             '                          .               ",
+" ' '                                     .      '   .                     .         |                                   ",
+"                                                         .      .             +   --o--     .           .               ",
+"                .             .                                        o            |                           '       ",
+" '                +                                                                                                     ",
+"   +                     o           o                          .                                                    '  ",
+"                                                            +     o                   . .           +    .              ",
+"      '                                    .    '      +                 *                                              ",
+"                    +                                                                                                   ",
+" .                           |        o         .                    '                                                  ",
+"                           --o--             .                   *                   +                                  ",
+"                        '    |                  .  +                                              '           . '       ",
+"     .            +                                                                  .                                  ",
+"                            .                                     o                                            '        ",
+"                 .                                                       '               *        +                     ",
+"   '                 o                                                '                                                 ",
+"            .                                                              .            .                               ",
+"                                                  '               o      .         '               *                    ",
+"                                                                       +                                                ",
+"                                                                   '                                             '      ",
+"                                    *                                                     + .                           ",
+"                                                     o                                                                  ",
+"         '                          +         .                      '                                   +              ",
+"                    +                 '                                                 *         .                     ",
+    ],
+
+    [
+"                      +~~                                                                                               ",
+"                                                                                                                        ",
+"                                                                                       +                                ",
+"       '                                                                                                                ",
+"                  .                                                                        .                            ",
+"                                                                    +                                                   ",
+"  '                                                                                          *                          ",
+"                                                                                                  ':.                   ",
+"                                               |                                                    '::._               ",
+"             |                         o     --o--                                                    '._)              ",
+"           - o -                               |                                           '               .            ",
+"             |                        |                                 o                                               ",
+"                                    --o--      o       +                                                                ",
+"                                      |                                                                                 ",
+"            .                                                         '                                                 ",
+"                      *                                .                                                                ",
+"                                                                  .           o                                         ",
+"                   |                                                                                                    ",
+"                 --o--                                                                                                  ",
+"           '       |                                                             '                    '                 ",
+"                                              *     o                    .                                              ",
+"                                                                                                                        ",
+"                                                                                                                        ",
+"                                                                                                                  |     ",
+".                                                                   o                                           --o--   ",
+"                                .                        o                       .                                |     ",
+"                      .                             *              '                                                   o",
+"                          +                                                                 *                           ",
+"  +                                                                                                                     ",
+"       ':.                                                                                         +                    ",
+"         '::._                                    _|_                                                    +              ",
+"           '._)              .                     |                             + _|_                                  ",
+"                  +                                                                 |                                +  ",
+"  .                                                 +    .                                                  +           ",
+"                   '                                                                                                    ",
+"   o                                                                                                                    ",
+"                                                                                                                        ",
+"                                                                      _|_                           o      '            ",
+"                                                                       |                                                ",
+"                                           o                                           .                                ",
+"                                                                                  .            '                        ",
+"                                                 |                                                                      ",
+"                                               - o -     o                                                              ",
+"                                                 |                                                            *         ",
+"                                                                                                                        ",
+"                                                                    '                                                   ",
+"                                                                                                                        ",
+"                    .                                                                                        '          ",
+"       .                       '                                                                    +                   ",
+"          o                                                                     .                                       ",
+    ],
+
+    [
+"                                                                                                                        ",
+"                         +                                            .                                                 ",
+"                                                                                    _..         +                       ",
+"                                                                                  '`-. `.                               ",
+"                                                +                       '             \\  \\                              ",
+"                     o                                                                |  |                              ",
+"                                                                   o                  /  /                              ",
+"                .                                                                 _.-`_.`                  .            ",
+"                                                                    .-'\"\"'-.       '''                                  ",
+"                                   |                 |            .' () .   '.                                          ",
+"                                 --o--             - o -         / .      o   \\                                         ",
+"                                   |                 |     .    ; o    _   ()  ;                   '                    ",
+"               +                                                ;     (_)      ;                                    .   ",
+"                                                                 \\ .        o /                                         ",
+"                                                      .           '.  O  .  .'                                          ",
+"                     '                                    '         '-....-'    *         o                             ",
+"                                                             '                                                          ",
+"     .                      '                  '                      + *                         .                     ",
+"             o                                                 '                       +                                ",
+"                                                                               +                                        ",
+"                                                                                                                        ",
+"                                    .                                                 +        *                        ",
+"                             o                                                                                          ",
+"                                                 +                                     .                                ",
+"                                                                                                                        ",
+"                                                                                                                        ",
+"    +                                                                                                                   ",
+"                                          .                     *                          *                            ",
+"                                                                                               .                        ",
+"                          .                                                                                   '         ",
+"                               +                            .                                                           ",
+"                                                       .                                                                ",
+"           '                                                                                                            ",
+"                                                                                                                  +     ",
+"                                                                                                                        ",
+"                                                                                                                        ",
+"                                                                                                                  |     ",
+"                                         .                .                                                     - o -   ",
+"      '                                                                                               +           |     ",
+"                                              .                                                .                        ",
+"               .                                                                                            .    .._    ",
+"                                                                       *                                       .' .-'`  ",
+"                                                                                                        .     /  /      ",
+"                                            o            .                                                    |  |      ",
+"           +   +           '                                                                                  \\  \\      ",
+"                               o                                                                               '._'-._  ",
+"                                                                                                                  ```   ",
+"                                                                                                                        ",
+"               +                                .                                                                       ",
+"                                                                                                                        ",
+    ]
+    ];
+
+    AsciiMorph.render(asciis[0]);
+
+    var currentIndex = 2;
+
+    setTimeout(function () {
+        AsciiMorph.morph(asciis[1]);
+    }, 1000);
+
+    setInterval(function () {
+        AsciiMorph.morph(asciis[currentIndex]);
+        currentIndex++;
+        currentIndex %= asciis.length;
+    }, 3000);
+</script>
     </div>
 
     <div id="footer">
@@ -78,8 +423,10 @@
        <div id="imagebox">
      <img src="media/skeleton.gif" id="skeleton">
      </div>
-     <div>
+     
+     <div id="container">
         
+     <div id="buttonContainer">
      <div id="buttonMenu">
      <button id="buttonMode">toggle button mode</button>
      </div>
@@ -88,10 +435,13 @@
 
       <div class="buttons">
         <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button id="easy">Easy Apply</button></a>
-        <button class="hidden" id="medium">Medium Apply</button>
+        <button id="medium">Medium Apply</button>
         <button id="hard">Hard Apply</button>
+        <button id="upgrade">Upgrade</button>
         <button id="lancer">Unsubscribe</button>
         </div>
+    </div>   
+    </div>
         
 </body>
     <script src="js\script.js" async></script>

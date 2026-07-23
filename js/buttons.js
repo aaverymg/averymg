@@ -24,12 +24,12 @@ $(document).ready(function(){
   audio.play();
     });
 
+  $("#night").hide();
+
+  $("#upgrade").click(function(){
+   $("#night, .main").toggle();
+   $("#buttonContainer").toggleClass('active');
+   });
+
 });
-
-
-
-
-function clickSplat(){
-            var sound = document.getElementById('audio').play();
-        }
 
