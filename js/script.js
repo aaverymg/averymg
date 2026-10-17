@@ -137,6 +137,7 @@ function footerText() {
         "this is how we win,",
         "no solace but heat death,",
         "there is a choice and we will not make it,",
+        "for security reasons please leave capslock on while browsing,",
     ];
 
     return footers[Math.floor((Math.random() * footers.length))];
